@@ -3,7 +3,7 @@
 
 This project aims to predict daily rental bike demand based on environmental and seasonal conditions. 
 By leveraging historical data, this regression problem seeks to optimize bike-sharing systems, helping operators make informed decisions regarding resource allocation, inventory management, and system efficiency.
-The dataset used is the [Bike Sharing Demand Dataset], provided by UCI Machine Learning repository(https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand).
+The dataset provided by UCI Machine Learning repository [Bike Sharing Demand Dataset](https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand).
 
 The dataset used is the Bike Sharing Demand Dataset, provided by Kaggle.
 1.  Problem Description
