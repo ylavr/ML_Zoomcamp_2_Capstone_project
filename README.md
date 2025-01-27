@@ -72,6 +72,14 @@ Several machine learning models were trained and tuned:
 ## 6.  Comparing Models' Performance and Selecting the Best Model
 Models were evaluated based on RMSE (Root Mean Squared Error) on the validation set and  R² Score. The best-performing model was selected for deployment:
 **XGBoost**
+| **Model**           | **Validation RMSE** | **Test RMSE**    | **R² Score**     |
+|---------------------|---------------------|------------------|------------------|
+| Linear Regression   | 461.8096           | 465.5259         | 0.4756           |
+| Ridge Regression    | 461.8165           | 465.5261         | 0.4756           |
+| Lasso Regression    | 461.8180           | 465.5252         | 0.4756           |
+| Random Forest       | 340.7357           | 327.9956         | 0.7397           |
+| XGBoost Regressor*  | 301.0234           | 301.9364         | 0.7794           |
+
 
 ## 7.  Creating Python Scripts from Notebook
 Code from Jupyter Notebooks was converted into reusable Python scripts:
@@ -108,15 +116,15 @@ docker run -it -p 9696:9696 bike-demand-prediction
 python predict_sample.py
 ```
 **Files in the Repository:**
-**SeoulBikeData.csv
-EDA - bikes.ipynb
-train.py
-xgb_model_trained.pkl
-predict.py
-predict_sample.py
-Dockerfile
-requirements.txt
-Screenshot with model output**
+**SeoulBikeData.csv**
+**EDA - bikes.ipynb**
+**train.py**
+**xgb_model_trained.pkl**
+**predict.py**
+**predict_sample.py**
+**Dockerfile**
+**requirements.txt**
+**Screenshot with model output**
 
 
 
