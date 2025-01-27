@@ -27,16 +27,16 @@ This project uses a requirements.txt file for dependency and environment managem
 git clone https://github.com/yourusername/bicycle-sharing-demand.
 git cd bicycle-sharing-demand
 ``` 
-
-3. Create and activate a virtual environment:
-4. 
-'''python -m venv env
+2. Create and activate a virtual environment:
+```
+python -m .venv env
 source env/bin/activate # For Linux/macOS
-env\Scripts\activate # For Windows'''
-
+.venv\Scripts\activate # For Windows
+```
 3. Install project dependencies:
-4. 
-'''pip install -r requirements.txt'''
+```
+pip install -r requirements.txt
+```
 
 ## 3.  Exploratory Data Analysis (EDA)
 
@@ -64,15 +64,10 @@ Categorical features were encoded using one-hot encoding.
 ## 5.  Model Training and Parameters Tuning
 Several machine learning models were trained and tuned:
 
-Linear Regression: Baseline model to assess linear relationships.
-
-Decision Tree: Tuned using max_depth and min_samples_split.
-
-Random Forest: Tuned with n_estimators, max_depth, and min_samples_leaf.
-
-Gradient Boosting: Tuned with learning_rate and n_estimators.
-
-XGBoost: Tuned with max_depth, eta, and subsample.
+**Linear Regression**: Baseline model to assess linear relationships.
+**Ridge and Lasso Regression**
+**Random Forest**: Tuned with n_estimators, max_depth, and min_samples_leaf.
+**XGBoost**: Tuned with max_depth, eta, and subsample.
 
 ## 6.  Comparing Models' Performance and Selecting the Best Model
 Models were evaluated based on RMSE (Root Mean Squared Error) on the validation set. The best-performing model was selected for deployment:
@@ -82,17 +77,22 @@ Code from Jupyter Notebooks was converted into reusable Python scripts:
 
 train.py: Trains the final model using the full training dataset, saving the model and preprocessing steps into a binary file (xgboost_model.bin).
 
-'''python train.py'''
+```
+python train.py
+```
 
 predict.py: Loads the trained model, serving predictions through a Flask API (/predict endpoint).
 
 ## 8.  Local Model Deployment with Docker
 The prediction service can be deployed locally using Docker:
 1. Build the Docker image:
-''' '''
+```
+```
 2. Run the Docker container:
-''' '''
-3. Test the service using predict_sample.py:
-''' '''
+```
+```
+4. Test the service using predict_sample.py:
+```
+```
 **Files in the Repository:**
 
