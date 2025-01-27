@@ -24,7 +24,7 @@ This prediction allows for better system optimization, ensuring users can access
 This project uses a requirements.txt file for dependency and environment management. To set up the project environment, follow these steps:
 1. Clone the repository:   
 ```
-git clone https://github.com/yourusername/bicycle-sharing-demand.
+git clone 
 git cd bicycle-sharing-demand
 ``` 
 2. Create and activate a virtual environment:
