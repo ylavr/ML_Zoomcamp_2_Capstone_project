@@ -87,12 +87,15 @@ predict.py: Loads the trained model, serving predictions through a Flask API (/p
 The prediction service can be deployed locally using Docker:
 1. Build the Docker image:
 ```
+docker build -t bike-demand-prediction .
 ```
 2. Run the Docker container:
 ```
+docker run -it -p 9696:9696 bike-demand-prediction     
 ```
 4. Test the service using predict_sample.py:
 ```
+python predict_sample.py
 ```
 **Files in the Repository:**
 
