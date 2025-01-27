@@ -30,7 +30,7 @@ git cd bicycle-sharing-demand
 2. Create and activate a virtual environment:
 ```
 python -m .venv env
-source env/bin/activate # For Linux/macOS
+source .venv/bin/activate # For Linux/macOS
 .venv\Scripts\activate # For Windows
 ```
 3. Install project dependencies:
